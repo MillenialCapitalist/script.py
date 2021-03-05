@@ -571,3 +571,37 @@ def by_three(number):
     return cube(number)
   else:
     return False
+
+#Loops and iterations
+n = 5
+while n > 0:
+  print(n)
+  n = n - 1
+print("Blastoff!")
+print(n)
+
+n = 0
+while n > 0:
+  print("Lather")
+  print("Rinse")
+print("Dry off!!")
+
+# Definite loops
+numbers = [0, 254, 2, -1, 3]
+
+for num in numbers:
+  if (num < 0):
+    print("Negative number detected")
+    break
+  print(num)
+
+
+for i in [5, 4, 3, 2, 1]:
+  print(i)
+print("Blastoff")
+
+#A Definite Loop with Strings
+friends = ["Joseph", "Glenn", "Sally"]
+for friend in friends:
+  print("Happy New Year:", friend)
+print("Done!")

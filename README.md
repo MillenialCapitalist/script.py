@@ -605,3 +605,13 @@ friends = ["Joseph", "Glenn", "Sally"]
 for friend in friends:
   print("Happy New Year:", friend)
 print("Done!")
+
+#The "is" and "is not" Operators
+#Python has an "is" operator 
+#that can be used in logical experessions
+#Implies "is the same as"
+#Similar to, but stronger than ==
+#"is not also" is a logical operator
+smallest = None
+print("Before")
+for value in [3, 41, 12, 9, 74, 15]:

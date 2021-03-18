@@ -615,3 +615,285 @@ print("Done!")
 smallest = None
 print("Before")
 for value in [3, 41, 12, 9, 74, 15]:
+
+#Finding the smallest value
+#We still have a variable that is the smallest so far.
+#The first time through the loop smallest is None, so
+#we take the first value to be the smallest
+
+smallest = None
+print("Before")
+for value in (9, 41, 12, 3, 74, 15):
+    if smallest is None:
+        smallest = value
+    elif value < smallest:
+        smallest = value
+    print(smallest, value)
+print("After", smallest)
+
+#The "is" and "is not" Operators
+#Python has an "is" operator
+#that can be used in logical experessions
+#Implies "is the same as" or equal values and types
+#Similar to, but stronger than ==
+#"is not also" is a logical operator
+
+
+#use "is" on Booleans only, advisably.
+
+#String Data Type 
+#A string is  a sequence of characters
+#A string literal uses quotes "Hello" or 'Hello'
+#For strings, + means concatenate
+#When a string contains numbers, it is still a big_string
+#We can convert numbers in a string into a number using int()
+
+string_1 = "Hello"
+string_2 = "there"
+bob = string_1 + string_2 
+print(bob)
+
+ 
+string_3 = "123"
+x = int(string_3) + 1
+print(x)
+
+apple = input("Enter:")
+x = int(apple) - 10
+
+#Looking Inside Strings 
+
+#We can get at any single character in a string
+#using an index specified in square brackets
+
+#The index value must be an integer and starts at zero
+
+#The index value can be an expression that is computed
+
+b a n a n a 
+0 1 2 3 4 5
+
+fruit = "banana"
+letter = fruit(1)
+print(letter)
+
+x = 3
+w = fruit[x - 1]
+print(w)
+
+#A Character Too far
+
+#You will get a python error if you attempt to index 
+#beyond the end of a string
+
+#So be careful when constructing index values and slices
+
+zot = "abc"
+print(zot[5])
+
+#A Character Too far
+
+#You will get a python error if you attempt to index 
+#beyond the end of a string
+
+#So be careful when constructing index values and slices
+
+
+
+#Looping Through Strings
+#Using a while statement and an iteration 
+#variable, and the "len" function, we can
+#construct a loop to look at each of the
+#letters in a string individually
+
+fruit = "banana"
+index = 0
+while index < len(fruit):
+  letter = fruit[index]
+  print(index, letter)
+  index = index + 1
+
+#A definite loop using a for statement is much more elegant
+#The iteration variable is completely taken care of 
+#by the for loop 
+
+fruit = "banana"
+for letter in fruit:
+    print(letter)
+
+index = 0
+while index < len(fruit):
+    letter = fruit[index]
+    print(letter)
+    index = index + 1
+
+#Looping and Counting 
+#This is a simple loop that loops through each letter
+#in a string and counts the number of times the loop 
+#encounters the "a" character 
+
+word = "banana"
+count = 0
+for letter in word:
+    if letter == "a":
+        count = count + 1
+    print(count) 
+
+#Looking deeper into in 
+
+#The iteration variable "iterates" through the sequence (ordered set)
+#The block(body) of code is executed once for each value in the sequence
+#The iteration variable moves through all of the values in the sequence
+
+for letter in "banana":
+    print(letter)
+
+#Slicing Strings 
+
+#We can also look at any continuous section of a string
+#using a colon operator
+
+#The second number is one beyong the end of the slice -
+#"up to but not including"
+
+#if the second number is beyond the end of the string,
+#it stops at the end.
+
+# M  O  N  T  Y     P  Y  T  H  O  N 
+# 0  1  2  3  4  5  6  7  8  9  10 11
+
+s = "Monty Python"
+print(s[0:4])
+print(s[6:7])
+print(s[6:20])
+
+#if we leave off the first number or the last number of
+#the slice, it is assumed to be the beginning or end of 
+#the string respectively
+s = "Monty Python"
+print(s[:2])
+print(s[8:])
+print(s[:])
+
+#When the + operator is applied to strings,
+#it means "concatenation"
+
+a = "Hello"
+b= a + "There"
+print(b)
+c = a + " " + "There"
+print(c)
+
+#Using in as a Logical Operator
+
+#The in keyword can also be used to check to see if one 
+#string is "in" another string
+
+#The in expression is a logical expression that returns
+#True or False and can be used in an if statement
+
+fruit = "banana"
+"n" in fruit
+"m" in fruit
+"nan" in fruit
+if "a" in fruit:
+  print("Found it!")
+
+# M  O  N  T  Y     P  Y  T  H  O  N
+# 0  1  2  3  4  5  6  7  8  9  10 11
+
+s = "Monty Python"
+print(s[0:4])
+print(s[6:7])
+print(s[6:20])
+
+#if we leave off the first number or the last number of
+#the slice, it is assumed to be the beginning or end of
+#the string respectively
+s = "Monty Python"
+print(s[:2])
+print(s[8:])
+print(s[:])
+
+#When the + operator is applied to strings,
+#it means "concatenation"
+
+a = "Hello"
+b= a + "There"
+print(b)
+c = a + " " + "There"
+print(c)
+
+#Using in as a Logical Operator
+
+#The in keyword can also be used to check to see if one
+#string is "in" another string
+
+#The in expression is a logical expression that returns
+#True or False and can be used in an if statement
+
+fruit = "banana"
+"n" in fruit
+"m" in fruit
+"nan" in fruit
+if "a" in fruit:
+  print("Found it!")
+
+
+#String Comparison
+
+if word == "banana":
+  print("All right, bananas.")
+
+if word < "banana":
+  print("Your word," + word + ", comes before banana.")
+elif word > "banana":
+  print("Your word," + word + ", comes after banana.")
+else:
+  print("All right, bananas.")
+
+#Using in as a Logical Operator
+
+#The in keyword can also be used to check to see if one
+#string is "in" another string
+
+#The in expression is a logical expression that returns
+#True or False and can be used in an if statement
+
+fruit = "banana"
+"n" in fruit
+"m" in fruit
+"nan" in fruit
+if "a" in fruit:
+  print("Found it!")
+
+
+# String Library
+
+#Python has a number of string functions which are in
+#the string library
+
+#These functions are already built into every string -
+#we invoke them by appending the function to the string
+#variable
+
+#These functions do not modify the original string,
+#instead they return a new string that has been altered
+
+stuff = "Hello world"
+type(stuff)
+dir(stuff)
+
+#Search and Replace
+
+#The replace() function is like a "search and replace"
+#operation in a word processor
+
+#It replaces all occurrences of the search string with
+#the replacement string
+
+greet = "Hello Bob"
+nstr = greet.replace("Bob", "Jane")
+print(nstr)
+nstr = greet.replace("o", "x")
+print(nstr)
